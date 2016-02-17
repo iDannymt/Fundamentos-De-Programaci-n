@@ -1,0 +1,20 @@
+import random
+contador=0
+print("Pick a Number")
+print("Bienvenido a mi programa para adivinar un numero")
+print("Elija un Numero entre el 1 y el 100.  ") 
+numero=int(input())
+contador=contador+1
+x= random.randint(1, 100)
+while (numero != x): #ver while como una caja
+    if (numero > x):
+        print("Lo siento te pasaste en el numero")
+    if (numero < x):
+        print("no no, tu numero es muy pequeno")
+    print("Elija un Numero entre el 1 y el 100.  ") 
+    numero=int(input())
+    contador=contador+1    
+print("PERFECTO! EL NUMERO ES ",x,"LO LOGRASTE!!")
+print("Tuviste un total de",contador, "Intentos")
+    
+    

@@ -1,0 +1,10 @@
+print(“Temperature “)
+print(“Este programa convierte los grados fahrenheit a celsius y te dice si el agua hierve a esa temperatura”)
+print(“Por favor dame los grados fahrenheit que quieres convertir”)
+fahrenheit=int(input())
+celsius = 5 * (fahrenheit – 32) / 9
+print(“Una temperatura de”, fahrenheit, “grados Fahrenheit es de”, int(celsius), ”grados Celsius”)
+if (celsius>=100):
+          print(“El agua hierve a esa temperatura en condiciones tipicas”)
+else:
+         print(“El agua no hierve a esa temperatura en condiciones tipicas”)

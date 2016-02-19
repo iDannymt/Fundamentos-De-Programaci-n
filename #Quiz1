@@ -30,4 +30,4 @@ print("La suma de",numero1,"+",numero2,"es:", numero1 + numero2)
 print("La resta de",numero1,"-",numero2,"es:", numero1 - numero2)
 print("El producto de ", numero1,"x",numero2,"es:", numero1*numero2)
 print("La division de ", numero1,"/",numero2,"es:", numero1/numero2)
-print("El residuo de ", numero1,"%",numero2,"es:", numero1%numero2)
+

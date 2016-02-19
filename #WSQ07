@@ -1,0 +1,25 @@
+import os
+print("Este programa hace la suma de un rango")
+numero1=1
+numero2=0
+while (numero1>=numero2):
+    
+    print("Dame el menor numero de tu rango")
+    numero1=int(input())
+    print("Dame el mayor numero de tu rango")
+    numero2=int(input())
+
+    if (numero1<numero2):
+        contador=numero1
+        otro=0
+        while(contador<=numero2):
+            os.system ("clear")
+            otro=otro+contador
+            contador=contador+1   
+        print("la suma del",numero1,"hasta",numero2,"es:", otro)
+    if(numero1>numero2):
+        os.system ("clear")
+        print("Elegiste el mayor numero del rango al inicio por favor introduce el menor primero")
+    if(numero1==numero2):
+        os.system ("clear")
+        print("Incorrecto! introduce otros valores",numero1,"y",numero2,"no son valores de un rango valido")

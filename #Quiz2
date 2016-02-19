@@ -25,5 +25,5 @@ def stars(numero):
     n=n+1
   return result
 
-z=stars(2)
+z=stars(5)
 print(z)

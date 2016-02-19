@@ -1,0 +1,37 @@
+Distancia
+
+import math
+print("Este programa te da la distancia entre dos puntos")
+
+def distancia (x1,y1,x2,y2):
+    
+    result=math.sqrt((x2-x1)**2+(y2-y1)**2)
+    return result
+
+dis=distancia(3,2,5,6)
+print(round(dis,2))
+
+Fibonacci
+
+print("Serie of Fibonacci")
+print("Por favor escribe un numero no negativo para iniciar la serie")
+numero=int(input())
+
+def fibonacci (numero):
+    inicio=1
+    ultimo=0
+    penultimo=0
+    contador=1
+    if (numero==0):
+        inicio=0
+
+    while (contador<numero):
+        penultimo= ultimo
+        ultimo= inicio
+        inicio=penultimo+ultimo 
+        contador= contador+1
+        
+    return inicio
+resultado= fibonacci(numero)
+    
+print ("El numero",numero,"en fibonacci es:",resultado)

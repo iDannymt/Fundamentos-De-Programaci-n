@@ -1,0 +1,29 @@
+Prog 1
+
+def superpower(numero,potencia):
+  n=1 # inicializando el contador 
+  result = numero # hay que agregar una variable mas para multiplicar tantas veces
+  while (n<potencia ):
+    result=result*numero
+    n=n+1
+  if(potencia==0):
+    result=1
+  if(potencia<0):
+    result=("Por el momento no te puedo responder a eso")
+         
+  return result
+z=superpower(4,4)
+print(z)
+
+Prog 2
+
+def stars(numero):
+  n=0 # inicializando el contador 
+  result = "" 
+  while (n<numero):
+    result=result+"*"
+    n=n+1
+  return result
+
+z=stars(2)
+print(z)

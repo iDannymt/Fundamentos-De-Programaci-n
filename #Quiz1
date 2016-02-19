@@ -1,0 +1,33 @@
+print("Volumen de un cilindro")
+Prog 1
+
+print("Dame la medida del radio")
+radio=(float(input()))
+print("Dame la medida de la altura ")
+altura=(float(input()))
+volumen=(3.1416*(radio**2)*altura)
+print("El volumen del cilindro es ", float(volumen))
+
+Prog 2
+
+print("Producto, divicion y residuo de dos numeros enteros ")
+print("Dame el primer numero")
+numero1=int(input())
+print("Dame el segundo numero")
+numero2=int(input())
+print("El producto de ", numero1,"x",numero2,"es:", numero1*numero2)
+print("Ela division de ", numero1,"/",numero2,"es:", numero1//numero2)
+print("El residuo de ", numero1,"%",numero2,"es:", numero1%numero2)
+
+Prog 3
+
+print("Producto, divicion y residuo de dos numeros decimales")
+print("Dame el primer numero")
+numero1=float(input())
+print("Dame el segundo numero")
+numero2=float(input())
+print("La suma de",numero1,"+",numero2,"es:", numero1 + numero2)
+print("La resta de",numero1,"-",numero2,"es:", numero1 - numero2)
+print("El producto de ", numero1,"x",numero2,"es:", numero1*numero2)
+print("La division de ", numero1,"/",numero2,"es:", numero1/numero2)
+print("El residuo de ", numero1,"%",numero2,"es:", numero1%numero2)

@@ -14,7 +14,7 @@ print(round(dis,2))
 Fibonacci
 
 print("Serie of Fibonacci")
-print("Por favor escribe un numero no negativo para iniciar la serie")
+print("Por favor escribe un numero no negativo para indicarte que numero es en Fibonacci")
 numero=int(input())
 
 def fibonacci (numero):

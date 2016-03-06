@@ -23,4 +23,32 @@ while(resp=="si"or resp=="Si"or resp=="SI"):
     factorial=0
     if (resp=="no"or resp=="No"or resp=="NO"):   
         print("Gracias por utilizar este programa que tengas un buen dia")
+        
+        
+        
+    CODIGO 2
+    import os
+import math
+
+n=1
+factorial=n
+resp="si"
+
+while(resp=="si"or resp=="Si"or resp=="SI"):
+    
+    os.system ("clear")
+        
+    print("Factorial Calculator")
+    print("Por favor dame un numero para darte su Factorial")
+    n=int(input())
+    factorial=n
+    
+    f=math.factorial(n)
+    print("El factorial es:",factorial) 
+    
+    print("Deseas darme otro numero? Si o No")
+    resp=str(input())
+    factorial=0
+    if (resp=="no"or resp=="No"or resp=="NO"):   
+        print("Gracias por utilizar este programa que tengas un buen dia")
     

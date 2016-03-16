@@ -1,0 +1,27 @@
+print("Lists")
+import math
+n=0
+valor=0
+lista=[]
+suma=0
+user=1
+
+while (user!= 0 ):
+    print ("Dame un numero cuando, quieras dejar de dar numeros escribe * 0 *")
+    user=float(input())
+    if (user!=0):
+        n=n+1
+        lista.append(user) 
+    
+
+for x in lista:
+    suma += float(x)
+    
+print ("La suma de los numeros en la lista es:",suma)
+prom=suma/n
+print("El promedio de los numeros en la lista es:",prom)
+for y in lista:
+    valor=valor+((y-prom)**2)
+    desv=math.sqrt(valor/n)
+print("La desviacion estandar de los numeros en la lista es:", round(desv,4))
+    

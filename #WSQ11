@@ -1,0 +1,49 @@
+import os
+os.system ("clear")
+print("Yo soy 196")
+lista=[]
+contador2=0
+naturales=0
+candidato=0
+y=1
+non=0
+regulador=0
+inferior=int(input("Por favor dame el limite inferior de la secuencia: "))
+superior=int(input("Por favor dame el limite superior de la secuencia: "))
+print()
+contador=inferior
+
+def reverse(num):
+  return int(str(num)[::-1])
+
+while(contador<=superior):
+    lista.append(contador)           
+    contador=contador+1
+    
+for x in lista:
+    z=reverse(lista[contador2])
+    if(x==z):
+        naturales=naturales+1 
+    else:  
+        while(x!=z and regulador<30):
+            x=x+z
+            z=reverse(x)
+            regulador=regulador+1
+        if(regulador<30):
+            non=non+1
+        else:
+            candidato=candidato+1
+            print("Numero lychrel encontado:",lista[contador2],)
+        regulador=0    
+    contador2=contador2+1
+
+print("\nLos resultados encontrados son del",inferior,"al",superior)
+print("El numero de palindromos naturales es:",naturales)
+print("El numero de no Lychrels es:",non)
+print("El numero de candidatos es:",candidato)
+
+
+    
+
+
+    

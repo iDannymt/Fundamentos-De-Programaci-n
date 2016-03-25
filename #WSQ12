@@ -1,0 +1,20 @@
+print ("Word Count")
+
+usuariopalabra = input("Por favor dame la palabra que quieres buscar ")
+usuarioarchivo = input("En que archivo quieres que busque? ")
+
+
+def contador_de_palabras (palabra,archivo):
+    repetidas = 0
+    x = open(archivo)
+    lines = x.readlines()
+    for line in lines:
+        palabras = line.split(' ')
+        for una in palabras:
+            if (una==palabra or una==(palabra+".")or una==(palabra+",")):
+                repetidas = repetidas+1
+    return repetidas
+            
+
+resultado=contador_de_palabras(usuariopalabra, usuarioarchivo)
+print("La palabra *",usuariopalabra, "* tiene un total de", resultado,"repeticion(es)")

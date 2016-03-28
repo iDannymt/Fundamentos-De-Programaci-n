@@ -1,0 +1,36 @@
+import os
+os.system ("clear")
+print ("The Palindrome")
+
+palabra=(str.lower(input("Que palabra quieres consultar? ")))
+def is_palindrome(num):
+    return str(num)[::-1]
+
+resultado= is_palindrome(palabra)
+
+if (resultado==palabra):
+    print("La palabra es un palindromo")
+    
+else:
+    print("La palabra no es un palindromo ")
+    
+    PROGRAMA DOS
+    
+
+import os
+os.system("clear")
+print("Groups")
+suma=0
+lista=[0,4,2,6,9,8,3,12 ]
+
+def find_threes (variable):
+    suma=0
+    otral=[]
+    for x in variable:
+        if(x%3==0):
+            suma=suma+x
+            otral.append(x)
+    print("La lista de numeros divisibles entre tres es:",otral)
+    return suma
+resultado= find_threes(lista)
+print("La suma de esos numeros es:",resultado)

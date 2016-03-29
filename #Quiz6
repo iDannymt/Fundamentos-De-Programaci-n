@@ -1,0 +1,15 @@
+print("Euclid’s algorithm")
+
+numero1=int(input("Dame el primer numero: "))
+numero2=int(input("Dame el segundo numero: "))
+
+def gcd (a,b):
+    if(a==b):
+        return a
+    elif (a>b):
+        return gcd(a-b,b)
+    else:
+        return gcd (a,b-a)
+    
+resultado=gcd(numero1,numero2)
+print("El maximo comun denominador es:",resultado)

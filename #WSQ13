@@ -1,5 +1,4 @@
 PRIMERA PARTE
-
 import math
 
 def distancia (x1,y1,x2,y2):
@@ -9,5 +8,67 @@ def distancia (x1,y1,x2,y2):
 fin=distancia(1,2,3,4)
 print(fin)
 
+
 SEGUNDA PARTE 
+numero=int(input("Por favor dame el tamaño de tu triangulo "))
+
+def triangulo (var):
+    r=range(1,var)
+    r2=range(var,0,-1)
+    
+    for x in r:
+        resultado="T"*x
+        print(resultado)
+        
+    for y in r2:
+        otra="T"*y
+        print(otra)
+    
+    
+triangulo(numero)
+
+
+TERCERA PARTE
+def superpower (a,b):
+	contador=1
+	z=a
+	while(contador<b):
+		
+		a=a*z
+		contador=contador+1
+	return a
+	
+r=superpower(3,3)
+print(r)
+
+
+CUARTA PARTE
+import os
+os.system("clear")
+print("Fibonacci")
+dtener=int(input("Por favor dime que posicion de la serie quieres saber "))
+
+def fibonacci (variable):
+    contador=1
+    fibo=0
+    chico=0
+    grande=1
+
+    if(variable==0):
+        grande=0
+        
+    if(variable<0):
+        print ("error NO USES VALORES NEGATIVOS")
+    
+    else:
+        while(contador<variable or contador==1 ):
+            fibo=grande+chico
+            chico=grande
+            grande=fibo
+
+            contador=contador+1
+
+        print("El numero", dtener,"en fibonacci es:",fibo)
+        
+fibonacci(dtener)
 

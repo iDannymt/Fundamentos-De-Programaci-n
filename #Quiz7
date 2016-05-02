@@ -1,0 +1,18 @@
+import os
+os.system("clear")
+print("scalar product")
+lista1=[1,2,3,4]
+lista2=[2,4,5,6]
+
+def dot_product(var1,var2):
+    acum=0
+    if(len(var1)==len(var2)):
+        for l1,l2 in zip(var1,var2):
+            suma=l1*l2
+            acum=acum+suma
+        print(acum)
+    else:
+        print("NaN")
+        
+            
+dot_product(lista1,lista2)
